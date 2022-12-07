@@ -5,16 +5,16 @@ public class TextCounter {
     {
         return String.valueOf(text.length());
     }
-    public static int getWordCount(String text)
+    public static String getWordCount(String text)
     {
         if(text == null || text.isEmpty())
         {
-            return 0;
+            return String.valueOf(0);
         }
         else
         {
             String[] words = text.split("\\P{Alnum}+");
-            return words.length;
+            return String.valueOf(words.length);
         }
     }
 }

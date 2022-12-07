@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            int count = TextCounter.getWordCount(etInput.getText().toString());
-            if (count == 0)
+            String count = TextCounter.getWordCount(etInput.getText().toString());
+            if (Integer.valueOf(count) == 0)
             {
                 Toast.makeText(this, "Input is empty", Toast.LENGTH_SHORT).show();
                 tvCount.setText("0");
